@@ -1,0 +1,204 @@
+<resources>
+
+    <string name="app_name">Memory Assistant</string>
+
+    <!--Main-->
+    <string name="login">Login</string>
+    <string name="learn">Learn</string>
+    <string name="practice">Practice</string>
+    <string name="recall">Recall</string>
+    <string name="preferences">Preferences</string>
+    <string name="get_pro">Be A Part</string>
+    <string name="apply">Implement</string>
+    <string name="my_space">My Space</string>
+    <string name="reminders">Reminders</string>
+    <string name="title_activity_preferences">Preferences</string> <!--Weird error without this-->
+
+    <!--Practice-->
+    <string name="choose_discipline">Choose Discipline</string>
+    <string name="numbers">Numbers</string>
+    <string name="names">Names</string>
+    <string name="cards">Cards</string>
+    <string name="binary">Binary Digits</string>
+    <string name="places_capital">Places</string>
+    <string name="dates">Dates</string>
+    <string name="i">Foods</string>
+    <string name="j">Colours</string>
+    <string name="letters">Letters</string>
+    <string name="random">Random</string>
+    <string name="digits">Digits</string>
+    <string name="choose_file">Choose File</string>
+
+    <!--Recall-->
+    <string name="enter_ans">Enter responses</string>
+    <string name="score">Score</string>
+    <string name="time_taken">Time taken</string>
+    <string name="check">Check</string>
+    <string name="just_answers">Give Up!</string>
+    <string name="time_elapsed">Time Elapsed</string>
+    <string name="time_left">Time Left</string>
+    <string name="wrong">Wrong</string>
+    <string name="correct">Correct</string>
+    <string name="your_response">Your Responses</string>
+    <string name="correct_answers">Correct Answers</string>
+    <string name="delete">Delete</string>
+    <string name="missed">Missed</string>
+    <string name="enter_date">Enter date</string>
+
+    <!--Practice-->
+    <string name="speech">Speech</string>
+    <string name="enter">Enter the number of</string>
+    <string name="st">values</string>
+    <string name="decks">decks</string>
+    <string name="words_small">words</string>
+    <string name="places_small">places</string>
+    <string name="nm">names</string>
+    <string name="events">events</string>
+    <string name="sz">Select maximum digits in a value</string>
+    <string name="clump">How many values to group together</string>
+    <string name="sw">Stopwatch</string>
+    <string name="tm">Timer</string>
+    <string name="clock">Select Timekeeper</string>
+    <string name="start">Start</string>
+    <string name="time_up">Time\'s Up</string>
+    <string name="ed">Please Enter Duration!</string>
+    <string name="reset">Reset</string>
+    <string name="stop">Stop</string>
+    <string name="resume">Resume</string>
+    <string name="ers">Enter number of values and size of each value</string>
+    <string name="save">Save</string>
+    <string name="saved">Saved</string>
+    <string name="save_failed">Save Failed. Retry?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="none">No time constraint</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="next">Next</string>
+    <string name="prev">Previous</string>
+    <string name="show_only_the_year">Show only the year</string>
+    <string name="negative">Include negative numbers</string>
+    <string name="decimal">Include decimal numbers</string>
+    <string name="start_timer">Start Timer</string>
+    <string name="start_stopwatch">Start Stopwatch</string>
+    <string name="standard">Standard</string>
+    <string name="custom">Custom</string>
+    <string name="choose_level">Choose level</string>
+    <string name="start_year">Select start year</string>
+    <string name="end_year">Select end year</string>
+    <string name="storage_permission_for_recall">Storage permissions are required for Recall</string>
+    <string name="speaking">Speaking</string>
+
+    <!--MySpace-->
+    <string name="majors">Major Systems</string>
+    <string name="ben">Ben Systems</string>
+    <string name="wardrobes">Wardrobes</string>
+    <string name="lists">Lists</string>
+    <string name="algorithms">Algorithms</string>
+    <string name="words">Words</string>
+
+    <string name="f_name">Name</string>
+    <string name="here">Enter here</string>
+    <string name="do_not_save">Exit without saving</string>
+    <string name="my_space_file_picker">My Space file picker</string>
+    <string name="search">Search</string>
+    <string name="not_found">Not Found</string>
+    <string name="search_from_start">Reached the bottom. Searching from the top</string>
+    <string name="nameless_file">Did not save nameless file</string>
+    <string name="shorter_name">Try again with a shorter name</string>
+    <string name="storage_permissions">Permission to access storage is needed</string>
+    <string name="check_storage">Please check storage</string>
+    <string name="enter_name">Please enter a name</string>
+
+    <!--Preferences-->
+    <string name="remind">Remind Me Periodically</string>
+    <string name="periodic">I Like To Practice At</string>
+    <string name="no_my_space_frags">Number of mySpace screens</string>
+    <string name="location_wise">Based On Location</string>
+    <string name="transit">During transit</string>
+    <string name="default_time">22:30</string>
+    <string name="theme">Theme</string>
+    <string name="app_theme">AppTheme</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="pitch">pitch</string>
+    <string name="single_card">Single card</string>
+    <string name="single_card_off">Show grid when practicing cards</string>
+    <string name="single_card_on">Show single card when practicing cards</string>
+    <string name="practice_grid_columns">Number of columns in Practice Cards</string>
+    <string name="recall_grid_columns">Number of columns in Recall Cards</string>
+    <string name="tabs_bottom">My Space tabs will be at the bottom of the screen</string>
+    <string name="tabs_top">My Space tabs will be at the top of the screen</string>
+    <string name="preceding_zeros">Preceding zeros</string>
+    <string name="no_preceding_zeros">Don\'t add zeros before a small number</string>
+    <string name="show_preceding_zeros">Add zeros before a small number</string>
+    <string name="letter_case">Letter case</string>
+    <string name="shuffle_decks">Shuffle Decks</string>
+    <string name="all_decks">Shuffle all decks together</string>
+    <string name="one_deck_at_a_time">Shuffle one deck at a time</string>
+    <string name="double_back_on">Press back twice to exit from the main screen</string>
+    <string name="clear_practice">Clear all practice cache</string>
+    <string name="double_back_to_exit">Prevent accidental app exits</string>
+    <string name="double_back_off">Press back just once to exit from the main screen</string>
+    <string name="bottom_tabs">Tabs on bottom</string>
+    <string name="speech_rate_changed_message">Letters - 2x\nNumbers - 1x\nBinary digits - 1x\nWords - 1x\nNames - .5x\nPlaces - .5x</string>
+
+    <!--Learn-->
+    <string name="method_of_loci">Method Of Loci</string>
+    <string name="associations">The Perfect Association</string>
+    <string name="major_system">The Major System</string>
+    <string name="equations">Equations</string>
+    <string name="checkout">There\'s more to learn</string>
+    <string name="pao">The PAO Memory System</string>
+    <string name="wardrobe_method">Wardrobe Method</string>
+    <string name="language">Languages</string>
+
+    <!--Revenue-->
+    <string name="already_purchased">You have already made that transaction\nTry something else :p</string>
+    <string name="donate_amounts">List of donatable amounts</string>
+    <string name="thanks">Thanks</string>
+
+    <!--other-->
+    <string name="tab">\t</string>
+    <string name="drop_down">Expand</string>
+    <string name="visit_my_space">Visit My Space</string>
+    <string name="try_again">Try again</string>
+    <string name="fnf_try_again">File not found. Try again</string>
+    <string name="io_try_again">IOException. Please try again</string>
+    <string name="report_to_dev">There was an error, please report this to the developer</string>
+    <string name="confused">Confused? Start from the top</string>
+    <string name="extra">Extra</string>
+    <string name="discipline">discipline</string>
+    <string name="speech_rate">Speech rate</string>
+    <string name="word_new">New</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="dl_from_play">For correct functioning, please download the app from the Google Play Store</string>
+    <string name="storage_full">Device storage full</string>
+    <string name="wait">Please wait</string>
+    <string name="fake_dates">These dates are not real</string>
+    <string name="faulty_translations">Translations might be faulty</string>
+
+    <!--contentDescription-->
+    <string name="a_list_of_all_the_learning_methods" translatable="false">A list of all the learning methods</string>
+    <string name="a_list_of_contributing_options_like_support_fund_commit_and_credits" translatable="false">A list of contributing options like support, fund, commit and credits</string>
+    <string name="list_of_tasks_that_can_be_performed_with_the_app" translatable="false">List of tasks that can be performed within the app</string>
+    <string name="a_list_of_disciplines_to_practice" translatable="false">A list of disciplines to practice</string>
+    <string name="privacy_policy_information" translatable="false">Privacy policy information</string>
+    <string name="item_image" translatable="false">Item image</string>
+    <string name="item_text" translatable="false">Item text</string>
+    <string name="heading_of_donation" translatable="false">Heading of donation</string>
+    <string name="details_of_donation" translatable="false">Details of donation</string>
+    <string name="event_occurred" translatable="false">Event occurred</string>
+    <string name="date_of_event" translatable="false">Date of event</string>
+    <string name="loading_progress_bar" translatable="false">Loading progress bar</string>
+    <string name="practice_level" translatable="false">Practice level</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="sliding_tabs" translatable="false">Sliding tabs</string>
+    <string name="view_pager" translatable="false">View Pager</string>
+    <string name="horizontal_scroll" translatable="false">horizontal scroll</string>
+    <string name="card_view" translatable="false">Card View</string>
+    <string name="walkthrough_viewpager" translatable="false">Walkthrough Viewpager</string>
+    <string name="language_spinner" translatable="false">Language Spinner</string>
+    <string name="choose_your_language" translatable="false">Choose your language</string>
+
+</resources>

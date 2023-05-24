@@ -1,0 +1,12 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contribute_list_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:contentDescription="@string/a_list_of_contributing_options_like_support_fund_commit_and_credits"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="8dp"
+    tools:context="com.memory_athlete.memoryassistant.main.Contribute">
+
+</ListView>

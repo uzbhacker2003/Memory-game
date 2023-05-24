@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.memory_athlete.memoryassistant">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".inAppBilling.CheckoutApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="true"
+        android:supportsRtl="true"
+        android:theme="@style/light"
+        tools:ignore="ExtraText"
+        tools:targetApi="n">
+        <activity
+            android:name=".language.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter
+                android:autoVerify="true"
+                tools:targetApi="m">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="memory-athlete.com"
+                    android:pathPrefix="/learn.html"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.Learn"
+            android:exported="true"
+            android:parentActivityName=".main.MainActivity"
+            tools:targetApi="jelly_bean">
+            <intent-filter
+                android:autoVerify="true"
+                tools:targetApi="m">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="memory-athlete.com"
+                    android:pathPrefix="/learn.html"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".lessons.Lessons"
+            android:parentActivityName=".main.Learn"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".main.Practice"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:parentActivityName=".main.MainActivity"
+            tools:targetApi="jelly_bean">
+            <intent-filter
+                android:autoVerify="true"
+                tools:targetApi="m">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="memory-athlete.com"
+                    android:pathPrefix="/practice.html"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.DisciplineActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".main.Practice"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".main.RecallSelector"
+            android:launchMode="singleTask"
+            android:parentActivityName=".main.MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".recall.RecallSimple"
+            android:launchMode="singleTask"
+            android:parentActivityName=".main.RecallSelector"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".recall.RecallComplex"
+            android:launchMode="singleTask"
+            android:parentActivityName=".main.RecallSelector"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".recall.RecallCards"
+            android:launchMode="singleTask"
+            android:parentActivityName=".main.RecallSelector"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".main.Implement"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mySpace.MySpace"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".lessons.ImplementLesson"
+            android:parentActivityName=".main.Implement"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".main.Preferences"
+            android:parentActivityName=".main.MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".mySpace.MySpace"
+            android:parentActivityName=".main.MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".mySpace.WriteFile"
+            android:parentActivityName=".mySpace.MySpace"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".main.Contribute"
+            android:parentActivityName=".main.MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".inAppBilling.DonateActivity"
+            android:parentActivityName=".main.Contribute"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.Contribute" />
+
+        </activity>
+        <activity
+            android:name=".main.CreditsActivity"
+            android:parentActivityName=".main.MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".main.PrivacyPolicy"
+            android:parentActivityName=".main.MainActivity"
+            tools:targetApi="jelly_bean" /> <!-- Services -->
+        <service
+            android:name=".services.ReminderJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.MySpaceJobService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <receiver android:name=".NotificationReceiver" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+    </application>
+
+</manifest>

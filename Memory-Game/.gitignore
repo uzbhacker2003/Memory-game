@@ -1,0 +1,53 @@
+app/build
+app/src/main/java/com/memory_athlete/memoryassistant/inAppBilling/Encryption.java
+app/google-services.json
+app/mapping.txt
+.signing/
+.keystore.properties
+app/fabric.properties
+gradle.properties
+resources/
+
+#built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Windows thumbnail db
+Thumbs.db
+
+# OS files
+.DS_Store
+.DS_Store?
+.directory
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ethumbs.db
+
+# Android Studio
+*.iml
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+.navigation
+captures/
+output.json 
+
+#NDK
+obj/
+.externalNativeBuild
